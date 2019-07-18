@@ -1,0 +1,50 @@
+body {
+    background-color: rgb(37, 102,101);
+}
+
+.container{
+    width:100%;
+    max-width:1200px;
+    margin:0 auto;
+    display:grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+}
+.container > div{
+    padding:45px;
+}
+#image_status{
+
+}
+.container > #game_options{
+    display:grid;
+    grid: gap 10px;
+    grid-template-rows: 3fr 1fr 1fr;
+}
+.letters{
+    display:flex;
+    justify-content:space-around;
+    padding:5px;    
+}
+.letters > button{
+    font-size:2.5em;
+    background-color:white;
+    color:#000;
+    cursor:pointer;
+}
+.letters > button[disabled="disabled"]{
+    background-color:#888;
+    color:#ccc;
+    opacity:.5;
+    cursor:not-allowed;
+}
+#guesses{
+    display:flex;
+    align-self:center;
+    justify-content: space-around;
+}
+#guesses > span{
+    text-decoration:underline;
+    font-size:2.5em;
+}
